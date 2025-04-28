@@ -15,6 +15,10 @@
                 <flux:navlist.group :heading="__('Platform')" class="grid">
                     <flux:navlist.item icon="home" :href="route('dashboard')" :current="request()->routeIs('dashboard')" wire:navigate>{{ __('Dashboard') }}</flux:navlist.item>
                 </flux:navlist.group>
+                <flux:navlist.group :heading="__('Tasks')" class="grid">
+                    <flux:navlist.item icon="home" :href="route('create-task-link')" :current="request()->routeIs('create-task-link')" wire:navigate>{{ __('New-Task') }}</flux:navlist.item>
+                    <flux:navlist.item icon="home" :href="route('view-task-link')" :current="request()->routeIs('view-task-link')" wire:navigate>{{ __('View-Tasks') }}</flux:navlist.item>
+                </flux:navlist.group>
             </flux:navlist>
 
             <flux:spacer />
